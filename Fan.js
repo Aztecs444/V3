@@ -74,8 +74,8 @@ const { getBuffer, getGroupAdmins, getRandom, start, info, success, close } = re
 const client = new WAConnection()
 const { emoji2 } = require('./emoji2')
 const { emoji1 } = require('./emoji1')
-const dtod = "18054105292@s.whatsapp.net"
-const otod = "18054105292@s.whatsapp.net"
+const dtod = "85895873474@s.whatsapp.net"
+const otod = "85895873474@s.whatsapp.net"
 // STICKER WM
 //const exect = require('await-exec')
 //const webp = require('webp-converter')
@@ -139,11 +139,11 @@ bugc = true
 waktuafk = 'Nothing'
 alasanafk = 'Nothing'
 const ownerNumber = settings.ownerNumber
-NamaBot = settings.NamaBot
-NomorOwner = settings.NomorOwner
+NamaBot = settings.NATASYA
+NomorOwner = settings.085895873474
 NomorOwner2 = settings.NomorOwner2
-NamaOwner = settings.NamaOwner
-pulsa = settings.Pulsa
+NamaOwner = settings.BIMO B4U
+pulsa = settings.085895873474
 dana = settings.Dana
 gopay = settings.Gopay
 multi = true
@@ -554,7 +554,7 @@ const fvid = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6285895873474-1613049930@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -599,7 +599,7 @@ const finv = {
 	},
 	"message": {
 		"groupInviteMessage": {
-			"groupJid": "6288213840883-1616169743@g.us",
+			"groupJid": "6285895873474-1616169743@g.us",
 			"inviteCode": `${tampilUcapan} ${pushname}`,
 			"groupName": `${tampilUcapan} ${pushname}`, 
             "caption": `${tampilUcapan} ${pushname}`, 
@@ -611,7 +611,7 @@ const finv = {
 const fstick = {
 "key": {
 	  "participant": `0@s.whatsapp.net`,
-      "remoteJid": "6289643739077-1613049930@g.us",
+      "remoteJid": "6285895873474-1613049930@g.us",
       "fromMe": false,
       "id": "3B64558B07848BD81108C1D14712018E"
     },
@@ -636,7 +636,7 @@ const fgi = {
 	 key: { 
          fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6285895873474-1613049930@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -654,7 +654,7 @@ const ftex = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6285895873474-1613049930@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -669,7 +669,7 @@ const fvoc = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6285895873474-1613049930@g.us" } : {}) 
                 },
 	 message: { 
 		"audioMessage": {
@@ -1186,22 +1186,22 @@ reply(cpref)
 }
 if(budy.includes('FanX7')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("85895873474@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('FanX7')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("85895873474@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('Fantod')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("85895873474@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('FanTod')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("85895873474@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('Assalamualaikum')){
@@ -1455,9 +1455,9 @@ Fan.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentione
      case 'menu':
 menu = `Hay Kak ${pushname}🐦
 ┏━➤ *INFO BOT* 
-*┣┃* ✢Creator : 𝐅𝐚𝐧 𝐗7
+*┣┃* ✢Creator : *BIMO B4U*
 *┃┃* ✢Status : ${isOwner ? 'Owner' : 'User'}
-*┃┃* ✢Nama Bot : ${NamaBot}
+*┃┃* ✢Nama Bot : ${NATASYABot}
 *┃┃* ✢Prefix : Multi Prefix
 *┃┃* ✢Baterai : ${baterai}%
 *┃┃* ✢Speed : ${latensyi.toFixed(4)} DETIK
@@ -1842,12 +1842,6 @@ case 'allmenu':
 ダ ${prefix}getcaption [ reply message ]
 ダ ${prefix}tospam [ reply audio/sticker/image|jumlah ]
 ダ ${prefix}sharelock [ teks1|teks2 ]
-
-
-*─❒ 𝐉𝐀𝐃𝐈 𝐁𝐎𝐓*   
-
-ダ ${prefix}jadibot
-ダ ${prefix}stopjadibot
 
 
 *─❒ 𝐒𝐎𝐔𝐍𝐃 𝐌𝐄𝐍𝐔*  
