@@ -74,8 +74,8 @@ const { getBuffer, getGroupAdmins, getRandom, start, info, success, close } = re
 const client = new WAConnection()
 const { emoji2 } = require('./emoji2')
 const { emoji1 } = require('./emoji1')
-const dtod = "18054105292@s.whatsapp.net"
-const otod = "18054105292@s.whatsapp.net"
+const dtod = "628979185922@s.whatsapp.net"
+const otod = "628979185922@s.whatsapp.net"
 // STICKER WM
 //const exect = require('await-exec')
 //const webp = require('webp-converter')
@@ -1064,7 +1064,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
 	        Fan.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-		    Fan.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title:`Hai ${pushname}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/18054105292?text=Assalamualaikum%20Kakak%20Irfan%20yang%20Ganteng`}}})
+		    Fan.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title:`Hai ${pushname}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/628979185922?text=Assalamualaikum%20Kakak%20Irfan%20yang%20Ganteng`}}})
 		}
 		function monospace(string) {
 return '```' + string + '```'
@@ -1186,30 +1186,26 @@ reply(cpref)
 }
 if(budy.includes('FanX7')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("628979185922@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('FanX7')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("628979185922@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('Fantod')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("628979185922@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('FanTod')){
 Fan.sendMessage(from, "hayo ngomongin owner gua ya", text)
-Fan.sendMessage("18054105292@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
+Fan.sendMessage("628979185922@s.whatsapp.net", `bang di gosipin Ama wa.me/${sender} Labrak Bang`, text)
 Fan.sendMessage(from, "Mampus Udh Ku Laporin", text)
 }
 if(budy.includes('Assalamualaikum')){
 cpref = `Hay Saya Xavhier Whatsapp Ketik .menu Untuk Mengakses`
-reply(cpref)
-}
-if(budy.includes('🗿')){
-cpref = `Njer Ada Batu Cok -_`
 reply(cpref)
 }
 if(budy.includes('assalamualaikum')){
@@ -1398,9 +1394,9 @@ Fan.updatePresence(from, Presence.recording)
 		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
 		if (isCmd && antiSpam.isFiltered(from) && !isGroup) { console.log(color('[SPAM]', 'red'), color(time, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname))
-return reply('Sabar Kasih Jeda 5 Detik Napa Kontol😒')}  
+return reply('😒Sabar Bang 5 Detik/Command')}  
 if (isCmd && antiSpam.isFiltered(from) && isGroup) { console.log(color('[SPAM]', 'red'), color(time, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname), 'in', color(groupName))
-return reply('Sabar Kasih Jeda 5 Detik Napa Kontol😒')}
+return reply('😒Sabar Bang 5 Detik/Command')}
 if (isCmd && !isOwner) antiSpam.addFilter(from)
 		if (!publik) {
 		if (!isOwner && !mek.key.fromMe) return
@@ -3829,7 +3825,7 @@ case 'bego':
       case 'pantek':
       
       if (!isGroup) return reply(mess.only.group)  
-        teks = `*Yang Paling ${command} Disini Adalah :* @${goo.jid.split('@')[0]}`
+        teks = `*Yang Paling ${command} Disini Adalah :* @${goo.jid.split('@')[0]} Damsarr ${command}`
         membr.push(goo.jid)
         mentions(teks, membr, true)
         break
@@ -4926,14 +4922,7 @@ await Fan.sendMessage(from, gifnya, MessageType.video, {mimetype : 'video/mp4', 
 break
 case 'script':
 case 'sc':
-    sourcecode = `Source code
-
-Jangan Di Bully Pak Saya Masih Pemula 🗿🚬
-
-TIKTOK GW : https://vt.tiktok.com/ZSe76fh2D
-WA GW     : https://wa.me/18054105292
-NIH SC      :https://github.com/Aztecs444/V3`
-reply(`${sourcecode}`)
+reply('BELI TOD 40k') 
 break
 case 'asupan':
 lahh = await fetchJson(`https://api.lolhuman.xyz/api/asupan?apikey=${lolkey}`)
@@ -6842,9 +6831,7 @@ var nn = body.slice(9)
                         break
             case 'hidetag':
             case 'h':
-          if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(`Khusus Admin Om`)
-                   if (!isBotGroupAdmins) return reply(`Jdiin Admin Dlu Bjir🗿`)
+          if (!isOwner && !mek.key.fromMe) return reply(`Khusus Owner Om`)
             ht = body.slice(9)
                 members_id = []
 				for (let mem of groupMembers) {
@@ -7109,6 +7096,7 @@ break
             break
 					case 'stickerwm':
 					case 'swm':
+            
 						if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 							ppp = `${args.join(' ')}`
 							const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -7147,7 +7135,7 @@ break
 							const packname1 = wmsti.split('|')[0]
 							const author1 = wmsti.split('|')[1]
 							exif.create(packname1, author1, `stickwm_${sender}`)
-							reply(mess.wait)
+							reply(`Bentar Nyett....`)
 								await ffmpeg(`${media}`)
 									.inputFormat(media.split('.')[4])
 									.on('start', function (cmd) {
@@ -7662,7 +7650,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     Fan.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdreply:{title: "Developer Xavhier ゑ",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./P3/image/logonya.jpeg'),sourceUrl:"https://wa.me/18054105292"}}})
+     Fan.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdreply:{title: "Developer Xavhier ゑ",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./P3/image/logonya.jpeg'),sourceUrl:"https://wa.me/628979185922"}}})
 	}
     }
     }
